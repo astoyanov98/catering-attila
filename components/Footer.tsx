@@ -4,14 +4,14 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="bg-white border-t border-[#e8e1db] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8 lg:px-16 py-12 pb-8">
+      <div className="site-shell py-12 pb-8">
         {/* Four columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Column 1: Logo */}
           <div className="flex flex-col">
             <Link href="/" className="shrink-0 w-fit">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Attila Catering"
                 width={120}
                 height={56}
@@ -29,13 +29,16 @@ export function Footer() {
               <Link href="/" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
                 Home
               </Link>
-              <Link href="#about" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
+              <Link href="/menu" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
+                Menu
+              </Link>
+              <Link href="/#about" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
                 About
               </Link>
-              <Link href="#services" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
+              <Link href="/#services" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
                 Services
               </Link>
-              <Link href="#contact" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
+              <Link href="/#contact" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
                 Contact
               </Link>
             </nav>
@@ -87,7 +90,7 @@ export function Footer() {
         {/* Bottom: Copyright & Social */}
         <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#e8e1db]">
           <p className="text-[#5f5a57] text-sm">
-            © 2026 Attila Catering. All rights reserved.
+            Copyright 2026 Attila Catering. All rights reserved.
           </p>
           <div className="flex gap-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#5B3F2E] hover:opacity-80 transition-opacity" aria-label="Instagram">
