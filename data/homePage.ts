@@ -34,7 +34,7 @@ export const heroContent = {
     href: "/menu",
     label: "Explore Menu",
   },
-  imageSrc: "/circle-food.png",
+  imageSrc: "/circle-food.svg",
   imageAlt: "Gourmet catering dish",
 } as const;
 

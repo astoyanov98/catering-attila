@@ -11,7 +11,7 @@ export function Footer() {
           <div className="flex flex-col">
             <Link href="/" className="shrink-0 w-fit">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Attila Catering"
                 width={120}
                 height={56}

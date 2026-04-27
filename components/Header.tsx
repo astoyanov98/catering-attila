@@ -22,7 +22,7 @@ export function Header() {
       <div className="site-shell flex items-center justify-between gap-4 py-2">
         <Link href="/" className="flex shrink-0 items-center" onClick={closeMenu}>
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="Attila Catering"
             width={200}
             height={100}

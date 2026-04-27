@@ -33,18 +33,18 @@ body {
 }
 
 .site-shell {
-  width: min(calc(100% - 1.5rem), 1600px);
+  width: min(calc(100% - 2rem), 1200px);
   margin-inline: auto;
 }
 
 @media (min-width: 640px) {
   .site-shell {
-    width: min(calc(100% - 2.5rem), 1600px);
+    width: min(calc(100% - 3rem), 1200px);
   }
 }
 
 @media (min-width: 1024px) {
   .site-shell {
-    width: min(calc(100% - 4rem), 1600px);
+    width: min(calc(100% - 5rem), 1200px);
   }
 }

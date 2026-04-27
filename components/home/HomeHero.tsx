@@ -61,16 +61,16 @@ export function HomeHero() {
         </div>
 
         <div className="order-1 flex flex-1 justify-center lg:order-2 lg:justify-end">
-          <div className="relative h-72 w-72 shrink-0 lg:h-[25rem] lg:w-[25rem]">
-            <div className="absolute inset-0 rounded-full border-4 border-white bg-[#f3efeb] shadow-xl" />
-            <div className="absolute inset-0 overflow-hidden rounded-full border-4 border-white shadow-xl">
+          <div className="relative aspect-[4/3] w-full max-w-[22rem] shrink-0 lg:max-w-[30rem]">
+            <div className="absolute inset-0 rounded-[2rem] border-4 border-white bg-[#f3efeb] shadow-xl" />
+            <div className="absolute inset-0 overflow-hidden rounded-[2rem] border-4 border-white shadow-xl">
               <Image
                 src={heroContent.imageSrc}
                 alt={heroContent.imageAlt}
                 fill
                 priority
                 className="object-cover object-center"
-                sizes="(max-width: 1024px) 288px, 400px"
+                sizes="(max-width: 1024px) 352px, 480px"
               />
             </div>
           </div>
