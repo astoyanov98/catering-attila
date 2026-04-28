@@ -18,58 +18,58 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 text-[#5f5a57] text-sm max-w-xs leading-relaxed">
-              Premium catering for events, corporate and private gatherings.
+              Премиум кетъринг за събития, корпоративни и частни поводи.
             </p>
           </div>
 
           {/* Column 2: Navigation */}
           <div>
-            <h3 className="text-[#2d1f1b] font-semibold mb-4">Navigation</h3>
+            <h3 className="text-[#2d1f1b] font-semibold mb-4">Навигация</h3>
             <nav className="flex flex-col gap-3">
               <Link href="/" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Home
+                Начало
               </Link>
               <Link href="/menu" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Menu
+                Меню
               </Link>
               <Link href="/#about" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                About
+                За нас
               </Link>
               <Link href="/#services" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Services
+                Услуги
               </Link>
-              <Link href="/#contact" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Contact
+              <Link href="/contact" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
+                Контакт
               </Link>
             </nav>
           </div>
 
           {/* Column 3: Services */}
           <div>
-            <h3 className="text-[#2d1f1b] font-semibold mb-4">Services</h3>
+            <h3 className="text-[#2d1f1b] font-semibold mb-4">Услуги</h3>
             <ul className="flex flex-col gap-3 text-[#5f5a57] text-sm">
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Event Catering
+                Кетъринг за събития
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Custom Menus
+                Персонални менюта
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Private Events
+                Частни събития
               </li>
               <li className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Corporate Catering
+                Корпоративен кетъринг
               </li>
             </ul>
           </div>
 
           {/* Column 4: Contact */}
           <div>
-            <h3 className="text-[#2d1f1b] font-semibold mb-4">Contact</h3>
+            <h3 className="text-[#2d1f1b] font-semibold mb-4">Контакт</h3>
             <div className="flex flex-col gap-3 text-[#5f5a57] text-sm">
               <a href="tel:0882245771" className="flex items-center gap-2 hover:text-[#5B3F2E] transition-colors">
                 <PhoneIcon className="w-4 h-4 shrink-0" />
@@ -81,7 +81,7 @@ export function Footer() {
               </a>
               <span className="flex items-center gap-2">
                 <LocationIcon className="w-4 h-4 shrink-0" />
-                Sofia, Bulgaria
+                София, България
               </span>
             </div>
           </div>
@@ -90,7 +90,7 @@ export function Footer() {
         {/* Bottom: Copyright & Social */}
         <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#e8e1db]">
           <p className="text-[#5f5a57] text-sm">
-            Copyright 2026 Attila Catering. All rights reserved.
+            © 2026 Attila Catering. Всички права запазени.
           </p>
           <div className="flex gap-4">
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#5B3F2E] hover:opacity-80 transition-opacity" aria-label="Instagram">

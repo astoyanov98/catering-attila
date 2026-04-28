@@ -32,6 +32,30 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes menuPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes menuCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .site-shell {
   width: min(calc(100% - 2rem), 1200px);
   margin-inline: auto;

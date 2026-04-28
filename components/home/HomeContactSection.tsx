@@ -23,12 +23,12 @@ export function HomeContactSection() {
 
             <div className="grid gap-4 sm:grid-cols-3 lg:min-w-[30rem]">
               {contactCards.map((card) =>
-                card.href ? (
+                "href" in card ? (
                   <a
                     key={card.title}
                     href={card.href}
-                    target={card.external ? "_blank" : undefined}
-                    rel={card.external ? "noopener noreferrer" : undefined}
+                    target={"external" in card ? "_blank" : undefined}
+                    rel={"external" in card ? "noopener noreferrer" : undefined}
                     className="rounded-2xl border border-[#e2d4c8] bg-white px-5 py-5 text-center transition-transform duration-300 hover:-translate-y-1"
                   >
                     <p className="text-sm uppercase tracking-[0.2em] text-[#8d6c57]">

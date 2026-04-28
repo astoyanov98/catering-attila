@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/menu", label: "Menu" },
-  { href: "/#about", label: "About" },
-  { href: "/#services", label: "Services" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/", label: "Начало" },
+  { href: "/menu", label: "Меню" },
+  { href: "/#about", label: "За нас" },
+  { href: "/#services", label: "Услуги" },
+  { href: "/contact", label: "Контакт" },
 ] as const;
 
 export function Header() {
@@ -42,22 +42,22 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/#contact"
+            href="/contact"
             className="relative isolate overflow-hidden rounded-lg border border-primary px-4 py-2 text-primary transition-colors before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:ease-out hover:text-white hover:before:scale-x-100"
           >
-            <span className="relative z-10">Get in Touch</span>
+            <span className="relative z-10">Запитване</span>
           </Link>
         </nav>
 
         <button
           type="button"
-          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={isOpen ? "Затвори навигацията" : "Отвори навигацията"}
           aria-expanded={isOpen}
           aria-controls="mobile-nav"
           onClick={() => setIsOpen((open) => !open)}
           className="inline-flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#d8c8bb] bg-white/70 text-[#5B3F2E] transition-colors hover:bg-[#f6eee7] lg:hidden"
         >
-          <span className="sr-only">Toggle navigation</span>
+          <span className="sr-only">Превключи навигацията</span>
           <span className="relative h-[14px] w-[14px]">
             <span
               className={`absolute left-0 top-0 h-0.5 w-[14px] rounded-full bg-current transition-all duration-300 ${
@@ -96,11 +96,11 @@ export function Header() {
             </Link>
           ))}
           <Link
-            href="/#contact"
+            href="/contact"
             onClick={closeMenu}
             className="relative isolate mt-4 inline-flex items-center justify-center overflow-hidden rounded-lg border border-primary px-4 py-3 text-sm font-medium text-primary transition-colors before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-primary before:transition-transform before:duration-300 before:ease-out hover:text-white hover:before:scale-x-100"
           >
-            <span className="relative z-10">Get in Touch</span>
+            <span className="relative z-10">Запитване</span>
           </Link>
         </nav>
       </div>
