@@ -1,104 +1,96 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const navigationLinks = [
+  { href: "/", label: "Начало" },
+  { href: "/menu", label: "Меню" },
+  { href: "/#about", label: "За нас" },
+  { href: "/#services", label: "Услуги" },
+  { href: "/contact", label: "Контакт" },
+] as const;
+
+const services = [
+  "Кетъринг за събития",
+  "Персонални менюта",
+  "Частни събития",
+  "Корпоративен кетъринг",
+] as const;
+
 export function Footer() {
   return (
-    <footer className="bg-white border-t border-[#e8e1db] overflow-hidden">
-      <div className="site-shell py-12 pb-8">
-        {/* Four columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {/* Column 1: Logo */}
-          <div className="flex flex-col">
-            <Link href="/" className="shrink-0 w-fit">
+    <footer className="border-t border-site-text/10 bg-white text-site-text">
+      <div className="site-shell py-10 lg:py-12">
+        <div className="grid gap-9 border-b border-site-text/10 pb-9 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+          <div className="max-w-sm">
+            <Link
+              href="/"
+              className="inline-flex"
+            >
               <Image
                 src="/logo.svg"
                 alt="Attila Catering"
-                width={120}
-                height={56}
+                width={118}
+                height={58}
+                className="h-auto w-24"
               />
             </Link>
-            <p className="mt-4 text-[#5f5a57] text-sm max-w-xs leading-relaxed">
-              Премиум кетъринг за събития, корпоративни и частни поводи.
-            </p>
+
           </div>
 
-          {/* Column 2: Navigation */}
-          <div>
-            <h3 className="text-[#2d1f1b] font-semibold mb-4">Навигация</h3>
-            <nav className="flex flex-col gap-3">
-              <Link href="/" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Начало
-              </Link>
-              <Link href="/menu" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Меню
-              </Link>
-              <Link href="/#about" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                За нас
-              </Link>
-              <Link href="/#services" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Услуги
-              </Link>
-              <Link href="/contact" className="w-fit text-[#5f5a57] text-sm hover:text-[#5B3F2E] transition-colors">
-                Контакт
-              </Link>
+          <FooterSection title="Навигация">
+            <nav className="flex flex-col gap-2.5">
+              {navigationLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="w-fit text-sm text-site-text/60 transition-colors hover:text-primary"
+                >
+                  {item.label}
+                </Link>
+              ))}
             </nav>
-          </div>
+          </FooterSection>
 
-          {/* Column 3: Services */}
-          <div>
-            <h3 className="text-[#2d1f1b] font-semibold mb-4">Услуги</h3>
-            <ul className="flex flex-col gap-3 text-[#5f5a57] text-sm">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Кетъринг за събития
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Персонални менюта
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Частни събития
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#5f5a57] shrink-0" />
-                Корпоративен кетъринг
-              </li>
+          <FooterSection title="Услуги">
+            <ul className="flex flex-col gap-2.5">
+              {services.map((service) => (
+                <li key={service} className="text-sm text-site-text/60">
+                  {service}
+                </li>
+              ))}
             </ul>
-          </div>
+          </FooterSection>
 
-          {/* Column 4: Contact */}
-          <div>
-            <h3 className="text-[#2d1f1b] font-semibold mb-4">Контакт</h3>
-            <div className="flex flex-col gap-3 text-[#5f5a57] text-sm">
-              <a href="tel:0882245771" className="flex items-center gap-2 hover:text-[#5B3F2E] transition-colors">
-                <PhoneIcon className="w-4 h-4 shrink-0" />
+          <FooterSection title="Контакт">
+            <div className="flex flex-col gap-2.5">
+              <FooterContactLink href="tel:0882245771" icon={<PhoneIcon />}>
                 088 224 5771
-              </a>
-              <a href="https://attilacatering.bg" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-[#5B3F2E] transition-colors">
-                <GlobeIcon className="w-4 h-4 shrink-0" />
+              </FooterContactLink>
+              <FooterContactLink
+                href="https://attilacatering.bg"
+                icon={<GlobeIcon />}
+                external
+              >
                 attilacatering.bg
-              </a>
-              <span className="flex items-center gap-2">
-                <LocationIcon className="w-4 h-4 shrink-0" />
+              </FooterContactLink>
+              <div className="text-sm text-site-text/60">
                 София, България
-              </span>
+              </div>
             </div>
-          </div>
+          </FooterSection>
         </div>
 
-        {/* Bottom: Copyright & Social */}
-        <div className="mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#e8e1db]">
-          <p className="text-[#5f5a57] text-sm">
+        <div className="flex flex-col gap-4 pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs text-site-text/50">
             © 2026 Attila Catering. Всички права запазени.
           </p>
-          <div className="flex gap-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#5B3F2E] hover:opacity-80 transition-opacity" aria-label="Instagram">
-              <InstagramIcon className="w-5 h-5" />
-            </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-[#5B3F2E] hover:opacity-80 transition-opacity" aria-label="Facebook">
-              <FacebookIcon className="w-5 h-5" />
-            </a>
+          <div className="flex items-center gap-2">
+            <SocialLink href="https://instagram.com" label="Instagram">
+              <InstagramIcon className="h-5 w-5" />
+            </SocialLink>
+            <SocialLink href="https://facebook.com" label="Facebook">
+              <FacebookIcon className="h-5 w-5" />
+            </SocialLink>
           </div>
         </div>
       </div>
@@ -106,29 +98,99 @@ export function Footer() {
   );
 }
 
-function PhoneIcon({ className }: { className?: string }) {
+function FooterSection({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <section>
+      <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+        {title}
+      </h3>
+      {children}
+    </section>
+  );
+}
+
+function FooterContactLink({
+  href,
+  icon,
+  external = false,
+  children,
+}: {
+  href: string;
+  icon: React.ReactNode;
+  external?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target={external ? "_blank" : undefined}
+      rel={external ? "noopener noreferrer" : undefined}
+      className="flex w-fit items-center gap-2 text-sm text-site-text/60 transition-colors hover:text-primary"
+    >
+      <span className="text-primary/60">{icon}</span>
+      {children}
+    </a>
+  );
+}
+
+function SocialLink({
+  href,
+  label,
+  children,
+}: {
+  href: string;
+  label: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="inline-flex h-9 w-9 items-center justify-center text-site-text/50 transition-colors hover:text-primary"
+    >
+      {children}
+    </a>
+  );
+}
+
+function PhoneIcon({ className = "h-4 w-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
     </svg>
   );
 }
 
-function GlobeIcon({ className }: { className?: string }) {
+function GlobeIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
       <circle cx="12" cy="12" r="10" />
       <line x1="2" y1="12" x2="22" y2="12" />
       <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-    </svg>
-  );
-}
-
-function LocationIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-      <circle cx="12" cy="10" r="3" />
     </svg>
   );
 }

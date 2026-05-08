@@ -9,13 +9,13 @@ export function HomeServicesSection() {
     >
       <div className="site-shell">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8d6c57]">
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
             {servicesContent.eyebrow}
           </p>
-          <h2 className="mt-5 font-serif text-3xl text-[#2d1f1b] lg:text-4xl">
+          <h2 className="mt-5 font-serif text-3xl text-site-text lg:text-4xl">
             {servicesContent.title}
           </h2>
-          <p className="mt-6 text-lg leading-8 text-[#64564d]">
+          <p className="mt-6 text-lg leading-8 text-site-text/80">
             {servicesContent.description}
           </p>
         </div>
@@ -24,7 +24,7 @@ export function HomeServicesSection() {
           {serviceCards.map((card) => (
             <article
               key={card.title}
-              className="group overflow-hidden rounded-[28px] border border-[#eaded2] bg-[#fffaf5] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(96,59,38,0.12)]"
+              className="group overflow-hidden rounded-[28px] border border-accent/35 transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_28px_60px_rgba(107,46,15,0.12)]"
             >
               <div className="relative h-56 overflow-hidden">
                 <Image
@@ -36,10 +36,10 @@ export function HomeServicesSection() {
                 />
               </div>
               <div className="px-6 py-6">
-                <h3 className="font-serif text-2xl text-[#3d251d]">
+                <h3 className="font-serif text-2xl text-primary">
                   {card.title}
                 </h3>
-                <p className="mt-3 leading-7 text-[#695b51]">
+                <p className="mt-3 leading-7 text-site-text/80">
                   {card.description}
                 </p>
               </div>

@@ -2,11 +2,12 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  /* Attila Catering brand colors from logo */
-  --primary: #603b26;
-  --secondary: #ffffff;
-  --accent: #8b6f47;
+  --foreground: #2a2a2a;
+  --primary: #6b2e0f;
+  --secondary: #fcf8f3;
+  --accent: #c9a96e;
+  --site-text: #2a2a2a;
+  --wave: #fcf8f3;
 }
 
 @theme inline {
@@ -15,6 +16,8 @@
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-accent: var(--accent);
+  --color-site-text: var(--site-text);
+  --color-wave: var(--wave);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

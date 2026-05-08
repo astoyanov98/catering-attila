@@ -81,7 +81,7 @@ const menuSections: MenuSection[] = [
         quantity: "30 бр.",
         priceEur: "36",
         priceBgn: "70.41",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/domatchedar.png",
         imageAlt: "Чедър с грозде",
       },
       {
@@ -90,7 +90,7 @@ const menuSections: MenuSection[] = [
         quantity: "30 бр.",
         priceEur: "36",
         priceBgn: "70.41",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Ементал с ягода",
       },
       {
@@ -99,7 +99,7 @@ const menuSections: MenuSection[] = [
         quantity: "30 бр.",
         priceEur: "36",
         priceBgn: "70.41",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Шишчета с коктейлни кюфтенца и чери домат",
       },
       {
@@ -108,7 +108,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "1.5",
         priceBgn: "2.93",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/partychasha.png",
         imageAlt: "Парти чаша микс с краставици и моркови",
       },
     ],
@@ -152,7 +152,7 @@ const menuSections: MenuSection[] = [
         quantity: "10 бр.",
         priceEur: "26",
         priceBgn: "50.85",
-        imageSrc: "/menu/Mini%20chabata%20s%20proshuto.PNG",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Мини чабата с италиански салам",
       },
       {
@@ -170,7 +170,7 @@ const menuSections: MenuSection[] = [
         quantity: "20 бр.",
         priceEur: "20",
         priceBgn: "39.12",
-        imageSrc: "/menu/kroasani.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Мини домашна баница с масло и сирене",
       },
     ],
@@ -186,7 +186,7 @@ const menuSections: MenuSection[] = [
         quantity: "10 бр.",
         priceEur: "25",
         priceBgn: "48.90",
-        imageSrc: "/menu/burgeri.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Мини вегетариански бургер",
       },
       {
@@ -195,7 +195,7 @@ const menuSections: MenuSection[] = [
         quantity: "10 бр.",
         priceEur: "22",
         priceBgn: "43.03",
-        imageSrc: "/menu/kroasani.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Мини вегетариански кроасан",
       },
       {
@@ -263,7 +263,7 @@ const menuSections: MenuSection[] = [
         quantity: "20 бр.",
         priceEur: "26",
         priceBgn: "50.85",
-        imageSrc: "/sladki.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: 'Петифури с маскарпоне и шоколад "Нутела"',
       },
       {
@@ -272,7 +272,7 @@ const menuSections: MenuSection[] = [
         quantity: "20 бр.",
         priceEur: "26",
         priceBgn: "50.85",
-        imageSrc: "/sladki.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Чийзкейк с боровинки на петифури",
       },
       {
@@ -306,7 +306,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "16",
         priceBgn: "31.29",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Плато Сирена 350гр",
       },
       {
@@ -315,7 +315,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "36",
         priceBgn: "70.41",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Плато Сирена 800гр",
       },
       {
@@ -325,7 +325,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "22",
         priceBgn: "43.03",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Плато Меса 350гр",
       },
       {
@@ -335,7 +335,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "49",
         priceBgn: "95.84",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/bezsnimka.png",
         imageAlt: "Плато Меса 800гр",
       },
       {
@@ -345,7 +345,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "22",
         priceBgn: "43.03",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/sirenaimesa.png",
         imageAlt: "Плато Микс Сирена и Меса 350гр",
       },
       {
@@ -355,7 +355,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "49",
         priceBgn: "95.84",
-        imageSrc: "/circle-food.png",
+        imageSrc: "/menu/sirenaimesa.png",
         imageAlt: "Плато Микс Сирена и Меса 800гр",
       },
       {
@@ -365,7 +365,7 @@ const menuSections: MenuSection[] = [
         quantity: "1 бр.",
         priceEur: "32",
         priceBgn: "62.59",
-        imageSrc: "/menu/pileshkipruchici.jpg",
+        imageSrc: "/menu/toplipredqstiq.png",
         imageAlt: "Плато Топли предястия 1200гр",
       },
     ],
@@ -389,23 +389,23 @@ export default function MenuPage() {
         >
           <path
             d="M0 90 C230 140 430 170 680 154 C930 138 1110 52 1330 42 C1450 36 1540 46 1600 56 L1600 220 L0 220 Z"
-            fill="#fcf8f3"
+            fill="var(--wave)"
           />
         </svg>
 
         <div className="site-shell relative">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8d6c57]">
+            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
               Attila Catering
             </p>
             <div className="mt-5 flex items-center gap-4 sm:gap-6">
-              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-[#a9856f]" />
-              <h1 className="shrink-0 font-serif text-5xl text-[#3f241b] sm:text-6xl">
+              <span className="h-px flex-1 bg-gradient-to-r from-transparent to-accent" />
+              <h1 className="shrink-0 font-serif text-5xl text-primary sm:text-6xl">
                 Меню
               </h1>
-              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-[#a9856f]" />
+              <span className="h-px flex-1 bg-gradient-to-l from-transparent to-accent" />
             </div>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#715f54]">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-site-text/75">
               Изберете категория отгоре и разгледайте предложенията за събития,
               коктейли, семейни поводи и готови кетъринг плата.
             </p>
@@ -413,7 +413,7 @@ export default function MenuPage() {
         </div>
       </section>
 
-      <section className="bg-[#fcf8f3] pb-20 pt-2 sm:pb-24">
+      <section className="bg-secondary pb-20 pt-2 sm:pb-24">
         <div className="site-shell">
           <MenuCategoryTabs sections={menuSections} />
         </div>

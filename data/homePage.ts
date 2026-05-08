@@ -15,6 +15,8 @@ export type ServiceCard = {
 export type FeaturedMenuItem = {
   title: string;
   subtitle: string;
+  description: string;
+  quantity: string;
   price: string;
   imageSrc: string;
   imageAlt: string;
@@ -137,6 +139,9 @@ export const featuredMenuItems: readonly FeaturedMenuItem[] = [
   {
     title: "Хапки със сьомга",
     subtitle: "Премиум солени хапки",
+    description:
+      "Пушена сьомга с Филаделфия върху канапе от многозърнесто хлебче. Подходящо за коктейлни приеми, бизнес събития и елегантни плата.",
+    quantity: "30 бр.",
     price: "€39",
     imageSrc: "/menu/hapkisiomga.png",
     imageAlt: "Хапки със сьомга",
@@ -144,6 +149,9 @@ export const featuredMenuItems: readonly FeaturedMenuItem[] = [
   {
     title: "Мини бургери",
     subtitle: "Любими за събития",
+    description:
+      "Мини бургери с телешко кюфте, чедър, кисели краставички и карамелизиран лук. Компактна и засищаща селекция за гости.",
+    quantity: "10 бр.",
     price: "€26",
     imageSrc: "/menu/burgeri.png",
     imageAlt: "Мини бургери",
@@ -151,6 +159,9 @@ export const featuredMenuItems: readonly FeaturedMenuItem[] = [
   {
     title: "Чабата с прошуто",
     subtitle: "Мини сандвичи",
+    description:
+      "Мини чабата с прошуто крудо, моцарела, айсберг и домат. Балансиран избор за смесени плата и офис събития.",
+    quantity: "10 бр.",
     price: "€26",
     imageSrc: "/menu/Mini%20chabata%20s%20proshuto.PNG",
     imageAlt: "Чабата с прошуто",
@@ -158,6 +169,9 @@ export const featuredMenuItems: readonly FeaturedMenuItem[] = [
   {
     title: "Шоколадови мини мъфини",
     subtitle: "Сладък финал",
+    description:
+      "Мини мъфин с шоколад Нутела. Подходящ за сладка маса, кафе пауза и финален акцент след солените предложения.",
+    quantity: "20 бр.",
     price: "€24",
     imageSrc: "/menu/minimufinshokolad.jpg",
     imageAlt: "Шоколадови мини мъфини",

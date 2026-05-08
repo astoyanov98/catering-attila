@@ -30,13 +30,12 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden items-center justify-end gap-4 text-sm font-medium lg:flex lg:gap-8">
+        <nav className="hidden items-center justify-end gap-4 text-base font-medium lg:flex lg:gap-8">
           {navLinks.map((item) => (
             <Link
               key={item.label}
               href={item.href}
               className="text-primary transition-opacity hover:opacity-80"
-              style={{ color: "#5B3F2E" }}
             >
               {item.label}
             </Link>
@@ -55,7 +54,7 @@ export function Header() {
           aria-expanded={isOpen}
           aria-controls="mobile-nav"
           onClick={() => setIsOpen((open) => !open)}
-          className="inline-flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#d8c8bb] bg-white/70 text-[#5B3F2E] transition-colors hover:bg-[#f6eee7] lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-accent/45 bg-white/70 text-primary transition-colors hover:bg-secondary lg:hidden"
         >
           <span className="sr-only">Превключи навигацията</span>
           <span className="relative h-[14px] w-[14px]">
@@ -90,7 +89,7 @@ export function Header() {
               key={item.label}
               href={item.href}
               onClick={closeMenu}
-              className="border-b border-[#ece0d5] py-3 text-base font-medium text-[#5B3F2E] transition-colors hover:text-[#7a543d]"
+              className="border-b border-accent/25 py-3 text-base font-medium text-primary transition-colors hover:text-accent"
             >
               {item.label}
             </Link>

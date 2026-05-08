@@ -5,27 +5,27 @@ export function HomeAboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[#fcf8f3] py-20 lg:py-28"
+      className="relative overflow-hidden bg-secondary py-20 lg:py-28"
     >
       <div className="site-shell relative z-10 flex flex-col gap-16 lg:flex-row lg:items-start">
         <div className="max-w-xl flex-1">
-          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#8d6c57]">
+          <p className="text-sm font-semibold uppercase tracking-[0.28em] text-accent">
             {aboutContent.eyebrow}
           </p>
-          <h2 className="mt-5 font-serif text-3xl text-[#2d1f1b] lg:text-4xl">
+          <h2 className="mt-5 font-serif text-3xl text-site-text lg:text-4xl">
             {aboutContent.title}
           </h2>
-          <p className="mt-6 leading-8 text-[#5f5a57]">
+          <p className="mt-6 leading-8 text-site-text/80">
             {aboutContent.description}
           </p>
           <div className="mt-8 space-y-4">
             {qualityPoints.map((point) => (
               <div
                 key={point}
-                className="flex items-start gap-3 rounded-2xl border border-[#eaded2] bg-white/70 px-4 py-4"
+                className="flex items-start gap-3 rounded-2xl border border-accent/35 bg-white/75 px-4 py-4"
               >
-                <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-[#8d6c57]" />
-                <p className="text-[#5f5a57]">{point}</p>
+                <span className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
+                <p className="text-site-text/80">{point}</p>
               </div>
             ))}
           </div>
@@ -39,11 +39,11 @@ export function HomeAboutSection() {
           >
             <path
               d="M500 350 L500 120 Q450 80 380 100 Q300 130 220 90 Q150 55 80 120 Q20 180 0 250 L0 350 Z"
-              fill="#f6eee7"
+              fill="color-mix(in srgb, var(--secondary) 82%, var(--accent))"
             />
           </svg>
 
-          <div className="relative z-10 grid grid-cols-1 gap-6 rounded-[30px] bg-white p-8 shadow-[0_26px_70px_rgba(96,59,38,0.10)] sm:grid-cols-3 lg:p-10">
+          <div className="relative z-10 grid grid-cols-1 gap-6 rounded-[30px] bg-white p-8 shadow-[0_26px_70px_rgba(107,46,15,0.10)] sm:grid-cols-3 lg:p-10">
             {aboutFeatureTiles.map((tile) => (
               <FeatureTile key={tile.title} {...tile} />
             ))}
@@ -74,7 +74,7 @@ function FeatureTile({
           sizes="96px"
         />
       </div>
-      <span className="font-medium text-[#6b4a3c]">{title}</span>
+      <span className="font-medium text-primary">{title}</span>
     </div>
   );
 }
