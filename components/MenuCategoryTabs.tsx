@@ -30,7 +30,7 @@ export function MenuCategoryTabs({ sections }: MenuCategoryTabsProps) {
   const activeSection = sections[activeIndex];
 
   return (
-    <div>
+    <div suppressHydrationWarning>
       <div className="mx-auto max-w-6xl pb-3">
         <div className="grid grid-cols-2 gap-3 px-1 sm:flex sm:flex-wrap sm:justify-center sm:gap-4">
           {sections.map((section, index) => {

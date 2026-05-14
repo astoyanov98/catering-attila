@@ -81,7 +81,7 @@ const menuSections: MenuSection[] = [
         quantity: "30 бр.",
         priceEur: "36",
         priceBgn: "70.41",
-        imageSrc: "/menu/domatchedar.png",
+        imageSrc: "/menu/grozdechedyr.png",
         imageAlt: "Чедър с грозде",
       },
       {
@@ -90,7 +90,7 @@ const menuSections: MenuSection[] = [
         quantity: "30 бр.",
         priceEur: "36",
         priceBgn: "70.41",
-        imageSrc: "/menu/bezsnimka.png",
+        imageSrc: "/menu/qgodaemental.png",
         imageAlt: "Ементал с ягода",
       },
       {
@@ -152,7 +152,7 @@ const menuSections: MenuSection[] = [
         quantity: "10 бр.",
         priceEur: "26",
         priceBgn: "50.85",
-        imageSrc: "/menu/bezsnimka.png",
+        imageSrc: "/menu/Mini%20chabata%20s%20proshuto.PNG",
         imageAlt: "Мини чабата с италиански салам",
       },
       {
@@ -170,7 +170,7 @@ const menuSections: MenuSection[] = [
         quantity: "20 бр.",
         priceEur: "20",
         priceBgn: "39.12",
-        imageSrc: "/menu/bezsnimka.png",
+        imageSrc: "/menu/banica.png",
         imageAlt: "Мини домашна баница с масло и сирене",
       },
     ],
@@ -263,7 +263,7 @@ const menuSections: MenuSection[] = [
         quantity: "20 бр.",
         priceEur: "26",
         priceBgn: "50.85",
-        imageSrc: "/menu/bezsnimka.png",
+        imageSrc: "/menu/petifuri.png",
         imageAlt: 'Петифури с маскарпоне и шоколад "Нутела"',
       },
       {
@@ -272,7 +272,7 @@ const menuSections: MenuSection[] = [
         quantity: "20 бр.",
         priceEur: "26",
         priceBgn: "50.85",
-        imageSrc: "/menu/bezsnimka.png",
+        imageSrc: "/menu/petifuri.png",
         imageAlt: "Чийзкейк с боровинки на петифури",
       },
       {

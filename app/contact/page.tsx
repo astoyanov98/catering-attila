@@ -1,19 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Контакт | Attila Catering",
   description: "Свържете се с Attila Catering за кетъринг запитване.",
 };
-
-const eventTypes = [
-  "Корпоративно събитие",
-  "Частно събитие",
-  "Коктейлен прием",
-  "Рожден ден",
-  "Семейно събиране",
-  "Друго",
-] as const;
 
 export default function ContactPage() {
   return (
@@ -54,105 +46,7 @@ export default function ContactPage() {
       <section className="bg-secondary pb-20 sm:pb-24">
         <div className="site-shell">
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
-            <form className="rounded-[28px] border border-accent/35 bg-white p-6 shadow-[0_24px_70px_rgba(107,46,15,0.08)] sm:p-8">
-              <div className="grid gap-5 sm:grid-cols-2">
-                <label className="block">
-                  <span className="text-sm font-semibold text-primary">
-                    Име
-                  </span>
-                  <input
-                    type="text"
-                    name="name"
-                    required
-                    className="mt-2 w-full rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                  />
-                </label>
-
-                <label className="block">
-                  <span className="text-sm font-semibold text-primary">
-                    Телефон
-                  </span>
-                  <input
-                    type="tel"
-                    name="phone"
-                    required
-                    className="mt-2 w-full rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                  />
-                </label>
-
-                <label className="block">
-                  <span className="text-sm font-semibold text-primary">
-                    Имейл
-                  </span>
-                  <input
-                    type="email"
-                    name="email"
-                    className="mt-2 w-full rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                  />
-                </label>
-
-                <label className="block">
-                  <span className="text-sm font-semibold text-primary">
-                    Тип събитие
-                  </span>
-                  <select
-                    name="eventType"
-                    className="mt-2 w-full rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                    defaultValue=""
-                  >
-                    <option value="" disabled>
-                      Изберете
-                    </option>
-                    {eventTypes.map((type) => (
-                      <option key={type} value={type}>
-                        {type}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-
-                <label className="block">
-                  <span className="text-sm font-semibold text-primary">
-                    Дата на събитието
-                  </span>
-                  <input
-                    type="date"
-                    name="date"
-                    className="mt-2 w-full rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                  />
-                </label>
-
-                <label className="block">
-                  <span className="text-sm font-semibold text-primary">
-                    Брой гости
-                  </span>
-                  <input
-                    type="number"
-                    name="guests"
-                    min="1"
-                    className="mt-2 w-full rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                  />
-                </label>
-              </div>
-
-              <label className="mt-5 block">
-                <span className="text-sm font-semibold text-primary">
-                  Съобщение
-                </span>
-                <textarea
-                  name="message"
-                  rows={6}
-                  className="mt-2 w-full resize-none rounded-xl border border-accent/45 bg-white px-4 py-3 text-site-text outline-none transition-colors focus:border-primary"
-                />
-              </label>
-
-              <button
-                type="submit"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-4 text-base font-semibold text-white shadow-[0_14px_30px_rgba(107,46,15,0.24)] transition-opacity hover:opacity-90 sm:w-auto"
-              >
-                Изпрати запитване
-              </button>
-            </form>
+            <ContactForm />
 
             <aside className="rounded-[28px] border border-accent/35 bg-white p-6 shadow-[0_24px_70px_rgba(107,46,15,0.08)] sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent">
@@ -176,20 +70,6 @@ export default function ContactPage() {
                   </span>
                   <span className="mt-1 block font-semibold text-primary">
                     088 224 5771
-                  </span>
-                </Link>
-
-                <Link
-                  href="https://attilacatering.bg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block rounded-2xl border border-accent/35 bg-secondary px-5 py-4 transition-colors hover:bg-accent/15"
-                >
-                  <span className="block text-sm uppercase tracking-[0.18em] text-accent">
-                    Уебсайт
-                  </span>
-                  <span className="mt-1 block font-semibold text-primary">
-                    attilacatering.bg
                   </span>
                 </Link>
 
